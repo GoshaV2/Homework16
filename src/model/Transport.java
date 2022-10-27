@@ -15,12 +15,6 @@ public abstract class Transport {
         this.country = country;
     }
 
-    public Transport(String brand, String model, int yearCreation, String country, String color, int maxSpeed) {
-        this(brand, model, yearCreation, country);
-        setColor(color);
-        setMaxSpeed(maxSpeed);
-    }
-
     public String getBrand() {
         return brand;
     }

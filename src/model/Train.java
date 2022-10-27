@@ -11,27 +11,6 @@ public class Train extends Transport {
         super(brand, model, yearCreation, country);
     }
 
-    public Train(String brand, String model, int yearCreation, String country, String color, int maxSpeed) {
-        super(brand, model, yearCreation, country, color, maxSpeed);
-    }
-
-    public Train(String brand, String model, int yearCreation, String country, double cost, int hourTravel, String stationStart, String stationEnd, int countTrolley) {
-        super(brand, model, yearCreation, country);
-        this.cost = cost;
-        this.hourTravel = hourTravel;
-        this.stationStart = stationStart;
-        this.stationEnd = stationEnd;
-        this.countTrolley = countTrolley;
-    }
-
-    public Train(String brand, String model, int yearCreation, String country, String color, int maxSpeed, double cost, int hourTravel, String stationStart, String stationEnd, int countTrolley) {
-        super(brand, model, yearCreation, country, color, maxSpeed);
-        this.cost = cost;
-        this.hourTravel = hourTravel;
-        this.stationStart = stationStart;
-        this.stationEnd = stationEnd;
-        this.countTrolley = countTrolley;
-    }
 
     public double getCost() {
         return cost;

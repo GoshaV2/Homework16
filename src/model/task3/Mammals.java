@@ -6,24 +6,8 @@ public class Mammals extends Animal{
         private String livingEnvironment;
     private int speed;
 
-    public Mammals(String name) {
-        super(name);
-    }
-
-    public Mammals(String name, String livingEnvironment) {
-        super(name);
-        setLivingEnvironment(livingEnvironment);
-    }
-
-    public Mammals(String name, int age, String livingEnvironment, int speed) {
+    public Mammals(String name, int age) {
         super(name, age);
-        setLivingEnvironment(livingEnvironment);
-        setSpeed(speed);
-    }
-
-    public Mammals(String name, int age, String livingEnvironment) {
-        super(name, age);
-        setLivingEnvironment(livingEnvironment);
     }
 
     public String getLivingEnvironment() {

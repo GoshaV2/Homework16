@@ -5,31 +5,10 @@ import java.util.Objects;
 public class Flightless extends Bird {
     private String typeMove;
 
-    public Flightless(String name) {
-        super(name);
-    }
-
     public Flightless(String name, int age) {
         super(name, age);
     }
 
-    public Flightless(String name, String livingEnvironment) {
-        super(name, livingEnvironment);
-    }
-
-    public Flightless(String name, int age, String livingEnvironment) {
-        super(name, age, livingEnvironment);
-    }
-
-    public Flightless(String name, String livingEnvironment, String typeMove) {
-        super(name, livingEnvironment);
-        setTypeMove(typeMove);
-    }
-
-    public Flightless(String name, int age, String livingEnvironment, String typeMove) {
-        super(name, age, livingEnvironment);
-        setTypeMove(typeMove);
-    }
 
     public String getTypeMove() {
         return typeMove;

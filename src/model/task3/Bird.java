@@ -5,22 +5,8 @@ import java.util.Objects;
 public class Bird extends Animal{
     private String livingEnvironment;
 
-    public Bird(String name) {
-        super(name);
-    }
-
     public Bird(String name, int age) {
         super(name, age);
-    }
-
-    public Bird(String name, String livingEnvironment) {
-        super(name);
-        setLivingEnvironment(livingEnvironment);
-    }
-
-    public Bird(String name, int age, String livingEnvironment) {
-        super(name, age);
-        setLivingEnvironment(livingEnvironment);
     }
 
     public String getLivingEnvironment() {

@@ -5,35 +5,8 @@ import java.util.Objects;
 public class Herbivores extends Mammals {
     private String typeEating;
 
-    public Herbivores(String name) {
-        super(name);
-    }
-
-    public Herbivores(String name, String livingEnvironment) {
-        super(name, livingEnvironment);
-    }
-
-    public Herbivores(String name, String livingEnvironment, String typeEating) {
-        super(name, livingEnvironment);
-        setTypeEating(typeEating);
-    }
-
-    public Herbivores(String name, int age, String livingEnvironment, int speed, String typeEating) {
-        super(name, age, livingEnvironment, speed);
-        setTypeEating(typeEating);
-    }
-
-    public Herbivores(String name, int age, String livingEnvironment, String typeEating) {
-        super(name, age, livingEnvironment);
-        setTypeEating(typeEating);
-    }
-
-    public Herbivores(String name, int age, String livingEnvironment, int speed) {
-        super(name, age, livingEnvironment, speed);
-    }
-
-    public Herbivores(String name, int age, String livingEnvironment) {
-        super(name, age, livingEnvironment);
+    public Herbivores(String name, int age) {
+        super(name, age);
     }
 
     public String getTypeEating() {

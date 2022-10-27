@@ -12,7 +12,9 @@ public class Main {
 
     private static void task12() {
         //task 1
-        Car car = new Car("audi", "A3", 2003, "German", "черный", 200);
+        Car car = new Car("audi", "A3", 2003, "German");
+        car.setColor("черный");
+        car.setMaxSpeed(200);
         Train train1 = new Train("Ласточка", "B-901", 2011, "Россия");
         train1.setMaxSpeed(301);
         train1.setStationStart("Белорусский вокзал");
@@ -28,8 +30,12 @@ public class Main {
         Bus bus1 = new Bus("Автоваз", "M1", 2000, "Россия");
         bus1.setColor("пурпурный");
         bus1.setMaxSpeed(200);
-        Bus bus2 = new Bus("Автоваз", "M1", 2000, "Россия", "красный", 100);
-        Bus bus3 = new Bus("Автотурбо", "M1", 2020, "Германия", "синий", 150);
+        Bus bus2 = new Bus("Автоваз", "M1", 2000, "Россия");
+        bus2.setColor("красный");
+        bus2.setMaxSpeed(100);
+        Bus bus3 = new Bus("Автотурбо", "M1", 2020, "Германия");
+        bus3.setColor("синий");
+        bus3.setMaxSpeed(150);
         System.out.println(car);
         System.out.println(train1);
         System.out.println(train2);
@@ -47,46 +53,69 @@ public class Main {
     }
 
     private static void task3(){
-        Herbivores gazel=new Herbivores("Газель","Луга","Трава");
-        gazel.setAge(11);
+        Herbivores gazel=new Herbivores("Газель",11);
+        gazel.setLivingEnvironment("Луга");
+        gazel.setTypeEating("Трава");
         gazel.setSpeed(100);
         gazel.go();
         System.out.println(gazel);
-        Herbivores girafe=new Herbivores("Жирав",21,"Савана",40,"Листья деревьев");
+        Herbivores girafe=new Herbivores("Жирав",21);
+        girafe.setLivingEnvironment("Савана");
+        girafe.setSpeed(40);
+        girafe.setTypeEating("Листья деревьев");
         System.out.println(girafe);
-        Herbivores hourse=new Herbivores("Лошадь",15,"Луга",40,"Сено");
+        Herbivores hourse=new Herbivores("Лошадь",15);
+        hourse.setLivingEnvironment("Луга");
+        hourse.setTypeEating("Сено");
+        hourse.setSpeed(40);
         System.out.println(hourse);
         hourse.eat();
 
-        Predator giena=new Predator("Гиена","Савана","Скот");
-        gazel.setAge(15);
-        gazel.setSpeed(30);
+        Predator giena=new Predator("Гиена",15);
+        giena.setLivingEnvironment("Савана");
+        giena.setSpeed(30);
+        giena.setTypeEating("Скот");
         System.out.println(giena);
-        Predator tiger=new Predator("Тигр",13,"Савана",50,"Крупнорогатый скот");
+        Predator tiger=new Predator("Тигр",13);
+        tiger.setLivingEnvironment("Савана");
+        tiger.setSpeed(50);
+        tiger.setTypeEating("Крупнорогатый скот");
         System.out.println(tiger);
-        Predator bear=new Predator("Медведь",30,"Лес",40,"Мёд, рыба");
+        Predator bear=new Predator("Медведь",30);
+        bear.setLivingEnvironment("Лес");
+        bear.setSpeed(40);
+        bear.setTypeEating("Мёд, рыба");
         System.out.println(bear);
 
 
-        Flightless pavlin=new Flightless("Павлин","Савана","медленый шаг");
-        pavlin.setAge(5);
+        Flightless pavlin=new Flightless("Павлин",5);
+        pavlin.setLivingEnvironment("Савана");
+        pavlin.setTypeMove("медленый шаг");
         System.out.println(pavlin);
-        Flightless pingvin=new Flightless("Пингвин",20,"Север","На животе");
+        Flightless pingvin=new Flightless("Пингвин",20);
+        pingvin.setLivingEnvironment("Север");
+        pingvin.setTypeMove("На животе");
         System.out.println(pingvin);
-        Flightless birdDodo=new Flightless("Птица Додо",2,"Тропический лес","Бег");
+        Flightless birdDodo=new Flightless("Птица Додо",2);
+        birdDodo.setAge(2);
+        birdDodo.setLivingEnvironment("Тропический лес");
+        birdDodo.setTypeMove("Бег");
         System.out.println(birdDodo);
 
-        Flying chayka=new Flying("Чайка","пляж","полёт");
-        chayka.setAge(5);
+        Flying chayka=new Flying("Чайка",5);
+        chayka.setLivingEnvironment("пляж");
+        chayka.setTypeMove("полёт");
         System.out.println(chayka);
-        Flying albatros=new Flying("Альбатрос",7,"неизвестно");
+        Flying albatros=new Flying("Альбатрос",7);
+        albatros.setLivingEnvironment("неизвестно");
         System.out.println(albatros);
-        Flying sokol=new Flying("Сокол",70,"Скалы");
+        Flying sokol=new Flying("Сокол",70);
+        sokol.setLivingEnvironment("Скалы");
         System.out.println(sokol);
 
-        Amphibian frog=new Amphibian("Лягушка");
+        Amphibian frog=new Amphibian("Лягушка",1);
         System.out.println(frog);
-        Amphibian zmeya=new Amphibian("уж пресноводный");
+        Amphibian zmeya=new Amphibian("уж пресноводный",2);
         System.out.println(zmeya);
     }
 }

@@ -5,35 +5,8 @@ import java.util.Objects;
 public class Predator extends Mammals {
     private String typeEating;
 
-    public Predator(String name) {
-        super(name);
-    }
-
-    public Predator(String name, String livingEnvironment) {
-        super(name, livingEnvironment);
-    }
-
-    public Predator(String name, String livingEnvironment, String typeEating) {
-        super(name, livingEnvironment);
-        setTypeEating(typeEating);
-    }
-
-    public Predator(String name, int age, String livingEnvironment, int speed, String typeEating) {
-        super(name, age, livingEnvironment, speed);
-        setTypeEating(typeEating);
-    }
-
-    public Predator(String name, int age, String livingEnvironment, String typeEating) {
-        super(name, age, livingEnvironment);
-        setTypeEating(typeEating);
-    }
-
-    public Predator(String name, int age, String livingEnvironment, int speed) {
-        super(name, age, livingEnvironment, speed);
-    }
-
-    public Predator(String name, int age, String livingEnvironment) {
-        super(name, age, livingEnvironment);
+    public Predator(String name, int age) {
+        super(name, age);
     }
 
     public String getTypeEating() {

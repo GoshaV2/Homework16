@@ -5,22 +5,8 @@ import java.util.Objects;
 public class Amphibian extends Animal {
     private String livingEnvironment;
 
-    public Amphibian(String name) {
-        super(name);
-    }
-
     public Amphibian(String name, int age) {
         super(name, age);
-    }
-
-    public Amphibian(String name, String livingEnvironment) {
-        super(name);
-        setLivingEnvironment(livingEnvironment);
-    }
-
-    public Amphibian(String name, int age, String livingEnvironment) {
-        super(name, age);
-        setLivingEnvironment(livingEnvironment);
     }
 
     public String getLivingEnvironment() {

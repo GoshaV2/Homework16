@@ -5,10 +5,6 @@ public class Bus extends Transport {
         super(brand, model, yearCreation, country);
     }
 
-    public Bus(String brand, String model, int yearCreation, String country, String color, int maxSpeed) {
-        super(brand, model, yearCreation, country, color, maxSpeed);
-    }
-
     @Override
     public void refill(String typeFuel) {
         switch (typeFuel) {
